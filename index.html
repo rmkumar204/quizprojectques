@@ -1,0 +1,621 @@
+<html>
+    <head><title>Quiz</title>
+      
+    </head>
+    <style>
+      * {
+            border: 0;
+            margin: 0;
+            /* box-sizing: border-box;*/ 
+        }
+        /* 1 */
+        main{
+            min-height: 100%;
+            min-width: 100%;
+            align-content: center;
+            background: linear-gradient(to right top, #cc5eee,#57d0e2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            position: absolute;
+        }
+       .glass{
+            width: 60%;
+            background-color: white;
+            min-height: 80vh;
+            background: linear-gradient(to right bottom, 
+            rgba(2, 78, 78, 0.2), 
+            rgba(255,255,255,0.3));
+            border-radius: 2rem;
+            z-index: 8;
+            backdrop-filter: blur(1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+           position: relative;
+           box-shadow: 3px 3px 20px rgb(233, 231, 231);
+            border-right: cornsilk 1px solid;
+            border-bottom: cornsilk 1px solid;
+          
+            
+        } 
+        h2{
+          font-size: 15px; 
+        padding: 20px;       }
+       
+          .circle1{
+            background-color: white;
+            background: linear-gradient(to right bottom, 
+            #d374f0, 
+            rgba(79, 129, 125, 0.1));
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 4px 4px 4px  black;
+            top: 5rem;
+            right: 10rem;   
+            border-top: whitesmoke 1px solid; 
+            border-left: whitesmoke 1px solid;  
+        }
+        .circle2{
+            background-color: white;
+            background: linear-gradient(to right bottom, 
+            rgba(138, 214, 238, 0.8), 
+            rgba(79, 129, 125, 0.1));
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 4px 4px 4px  black;
+            left: 10rem;
+            top: 5rem;  
+            border-top: whitesmoke 1px solid; 
+            border-left: whitesmoke 1px solid; 
+        }
+        .circle3{
+          background-color: white;
+            background: linear-gradient(to right bottom, 
+            rgba(138, 214, 238, 0.8), 
+            rgba(79, 129, 125, 0.1));
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 4px 4px 4px  black;
+            left: 10rem;
+            bottom: -5rem;  
+            border-top: whitesmoke 1px solid; 
+            border-left: whitesmoke 1px solid; 
+        }
+        /* 5 */
+        .circle4{
+          
+          background-color: white;
+            background: linear-gradient(to right bottom, 
+            #d374f0, 
+            rgba(79, 129, 125, 0.1));
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 4px 4px 4px  black;
+            bottom: -5rem;
+            right: 10rem;
+            border-top: whitesmoke 1px solid; 
+            border-left: whitesmoke 1px solid; 
+        } 
+        #myButton{
+          position: relative;
+          width: fit-content;
+          margin-left: 300px;
+          height: 25px;
+          border-radius: 5px;
+          background-color: unset;
+          border: 2px solid rgb(5, 5, 77);
+          color: rgba(247, 232, 26, 0.867);
+          font-weight: 700;
+          margin-top: 30px;
+          margin-left: 30px;
+        }
+        .Qpage{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: left;
+          
+          width: 50%;
+          height: 50%;
+          padding-bottom: 20px;
+         
+        }
+    </style>
+    <body>
+
+
+
+      <main>
+        <section class="glass">
+         <script type="text/javascript">
+      window.addEventListener('contextmenu', function (e) { 
+   // do something here... 
+   e.preventDefault(); 
+ }, false);
+         </script>
+       
+        
+          <!-- <button id="myButton">Time Start</button>
+          <script type="text/javascript">
+            document. getElementById("myButton"). onclick = function () {
+            location. href = "";
+            };
+            </script> -->
+            
+            <div class="Qpage">
+                <h2>1.jquery starts with?</h2>
+                <!-- <p>Choose 1 answer</p> -->
+                <!-- <hr /> -->
+              
+                <div id='block-11' >
+                  <label for='option-11' >
+                    <input type='radio' name='ans1' value='&symbol' id='option-11' />
+                    & symbol</label>
+                  <span id='result-11'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-12' >
+                  <label for='option-12' >
+                    <input type='radio' name='ans1' value='# symbol' id='option-12' />
+                    # symbol</label>
+                  <span id='result-12'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-13' >
+                  <label for='option-13' >
+                    <input type='radio' name='ans1' value='$ symbol' id='option-13'  />
+                    $ symbol</label>
+                  <span id='result-13'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-14' >
+                  <label for='option-14' >
+                    <input type='radio' name='ans1' value='@ symbol' id='option-14' />
+                    @ symbol</label>
+                  <span id='result-14'></span>
+                </div>
+
+                <h2>2.What method is used to access an array value?</h2>
+                <!-- <p>Choose 1 answer</p> -->
+                <!-- <hr /> -->
+              
+                <div id='block-21' >
+                  <label for='option-21' >
+                    <input type='radio' name='ans2' value='() notation' id='option-21' />
+                    () notation</label>
+                  <span id='result-21'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-22' >
+                  <label for='option-22' >
+                    <input type='radio' name='ans2' value='[] notation' id='option-22' />
+                    [] notation</label>
+                  <span id='result-22'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-23' >
+                  <label for='option-23' >
+                    <input type='radio' name='ans2' value='. notation' id='option-23'  />
+                    . notation</label>
+                  <span id='result-23'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-24' >
+                  <label for='option-24' >
+                    <input type='radio' name='ans2' value='{}notation' id='option-24' />
+                    {}notation</label>
+                  <span id='result-24'></span>
+                </div>
+
+                <h2>3.array of object?</h2>
+                <!-- <p>Choose 1 answer</p> -->
+                <!-- <hr /> -->
+              
+                <div id='block-31' >
+                  <label for='option-31' >
+                    <input type='radio' name='ans3' value='var arr=[{key1:"value"},{key2:"value2"}];' id='option-31' />
+                    var arr=[{key1:"value"},{key2:"value2"}];</label>
+                  <span id='result-31'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-32' >
+                  <label for='option-32' >
+                    <input type='radio' name='ans3' value='var arr=[];' id='option-32' />
+                    var arr=[];</label>
+                  <span id='result-32'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-33' >
+                  <label for='option-33' >
+                    <input type='radio' name='ans3' value=' var arr[]={};' id='option-33'  />
+                    var arr[]={};</label>
+                  <span id='result-33'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-34' >
+                  <label for='option-34' >
+                    <input type='radio' name='ans3' value=' var arr={key1:[],key2:[]}' id='option-34' />
+                    var arr={key1:[],key2:[]}</label>
+                  <span id='result-34'></span>
+                </div>
+
+                <h2>4.var a=[2,4,5,6]; a.length?</h2>
+                <!-- <p>Choose 1 answer</p> -->
+                <!-- <hr /> -->
+              
+                <div id='block-41' >
+                  <label for='option-41' >
+                    <input type='radio' name='ans4' value='1' id='option-41' />
+                    1</label>
+                  <span id='result-41'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-42' >
+                  <label for='option-42' >
+                    <input type='radio' name='ans4' value='6' id='option-42' />
+                    6</label>
+                  <span id='result-42'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-43' >
+                  <label for='option-43' >
+                    <input type='radio' name='ans4' value='3' id='option-43'  />
+                    3</label>
+                  <span id='result-43'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-44' >
+                  <label for='option-44' >
+                    <input type='radio' name='ans4' value='4' id='option-44' />
+                    4</label>
+                  <span id='result-44'></span>
+                </div>
+
+                <h2>5.which one is arrow function</h2>
+                <!-- <p>Choose 1 answer</p> -->
+                <!-- <hr /> -->
+              
+                <div id='block-51' >
+                  <label for='option-51' >
+                    <input type='radio' name='ans5' value=' dairy=()={}' id='option-51' />
+                    dairy=()={}</label>
+                  <span id='result-51'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-52' >
+                  <label for='option-52' >
+                    <input type='radio' name='ans5' value='   dairy(){}' id='option-52' />
+                    dairy(){}</label>
+                  <span id='result-52'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-53' >
+                  <label for='option-53' >
+                    <input type='radio' name='ans5' value='dairy=m=>{}' id='option-53'  />
+                    dairy=m=>{}</label>
+                  <span id='result-53'></span>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-54' >
+                  <label for='option-54' >
+                    <input type='radio' name='ans5' value='1dairy(m)=>' id='option-54' />
+                    dairy(m)=></label>
+                  <span id='result-54'></span>
+                </div>
+
+
+               
+                <!-- <hr /> -->
+                <button type='button' id="sub" onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+              </div>
+              <a id='showanswer1'></a>
+              <div id="getback"></div>
+              <script type="text/javascript">
+                //    The function evaluates the answer and displays result
+                function displayAnswer1() {
+                 
+                  if(
+                  (
+                  (document.getElementById('option-11').checked)||
+                  (document.getElementById('option-12').checked)||
+                  (document.getElementById('option-13').checked)||
+                  (document.getElementById('option-14').checked))&&(
+                  (document.getElementById('option-21').checked)||
+                  (document.getElementById('option-22').checked)||
+                  (document.getElementById('option-23').checked)||
+                  (document.getElementById('option-24').checked))&&(
+                  (document.getElementById('option-31').checked)||
+                  (document.getElementById('option-32').checked)||
+                  (document.getElementById('option-33').checked)||
+                  (document.getElementById('option-34').checked))&&(
+                  (document.getElementById('option-41').checked)||
+                  (document.getElementById('option-42').checked)||
+                  (document.getElementById('option-43').checked)||
+                  (document.getElementById('option-44').checked))&&(
+
+                  (document.getElementById('option-51').checked)||
+                  (document.getElementById('option-52').checked)||
+                  (document.getElementById('option-53').checked)||
+                  (document.getElementById('option-54').checked)))
+                  {
+                    if (document.getElementById('option-11').checked) {
+                    document.getElementById('block-11').style.border = '3px solid red'
+                    
+
+                    document.getElementById('result-11').style.color = 'red'
+                    document.getElementById('result-11').innerHTML = 'Incorrect!'
+                    
+                  }
+                  
+                  if (document.getElementById('option-12').checked) {
+                    document.getElementById('block-12').style.border = '3px solid red'
+                    document.getElementById('result-12').style.color = 'red'
+                    document.getElementById('result-12').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-13').checked) {
+                    document.getElementById('block-13').style.border = '3px solid limegreen'
+                    document.getElementById('result-13').style.color = 'limegreen'
+                    document.getElementById('result-13').innerHTML = 'Correct!'
+                    
+                  }
+                  if (document.getElementById('option-14').checked) {
+                    document.getElementById('block-14').style.border = '3px solid red'
+                    document.getElementById('result-14').style.color = 'red'
+                    document.getElementById('result-14').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-21').checked) {
+                    document.getElementById('block-21').style.border = '3px solid red'
+                    
+
+                    document.getElementById('result-21').style.color = 'red'
+                    document.getElementById('result-21').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-22').checked) {
+                    document.getElementById('block-22').style.border = '3px solid limegreen'
+                    document.getElementById('result-22').style.color = 'limegreen'
+                    document.getElementById('result-22').innerHTML = 'Correct!'
+                    
+                  }
+                  if (document.getElementById('option-23').checked) {
+                    document.getElementById('block-23').style.border = '3px solid red'
+                    document.getElementById('result-23').style.color = 'red'
+                    document.getElementById('result-23').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-24').checked) {
+                    document.getElementById('block-24').style.border = '3px solid red'
+                    document.getElementById('result-24').style.color = 'red'
+                    document.getElementById('result-24').innerHTML = 'Incorrect!'
+                    
+                  }
+               
+                  if (document.getElementById('option-31').checked) {
+                    document.getElementById('block-31').style.border = '3px solid limegreen'
+                    
+
+                    document.getElementById('result-31').style.color = 'limegreen'
+                    document.getElementById('result-31').innerHTML = 'Correct!'
+                    
+                  }
+                  if (document.getElementById('option-32').checked) {
+                    document.getElementById('block-32').style.border = '3px solid red'
+                    document.getElementById('result-32').style.color = 'red'
+                    document.getElementById('result-32').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-33').checked) {
+                    document.getElementById('block-33').style.border = '3px solid red'
+                    document.getElementById('result-33').style.color = 'red'
+                    document.getElementById('result-33').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-34').checked) {
+                    document.getElementById('block-34').style.border = '3px solid red'
+                    document.getElementById('result-34').style.color = 'red'
+                    document.getElementById('result-34').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-41').checked) {
+                    document.getElementById('block-41').style.border = '3px solid red'
+                    
+
+                    document.getElementById('result-41').style.color = 'red'
+                    document.getElementById('result-41').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-42').checked) {
+                    document.getElementById('block-42').style.border = '3px solid red'
+                    document.getElementById('result-42').style.color = 'red'
+                    document.getElementById('result-42').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-43').checked) {
+                    document.getElementById('block-43').style.border = '3px solid red'
+                    document.getElementById('result-43').style.color = 'red'
+                    document.getElementById('result-43').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-44').checked) {
+                    document.getElementById('block-44').style.border = '3px solid limegreen'
+                    document.getElementById('result-44').style.color = 'limegreen'
+                    document.getElementById('result-44').innerHTML = 'Correct!'
+                    
+                  }
+                  if (document.getElementById('option-51').checked) {
+                    document.getElementById('block-51').style.border = '3px solid red'
+                    
+
+                    document.getElementById('result-51').style.color = 'red'
+                    document.getElementById('result-51').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-52').checked) {
+                    document.getElementById('block-52').style.border = '3px solid red'
+                    document.getElementById('result-52').style.color = 'red'
+                    document.getElementById('result-52').innerHTML = 'Incorrect!'
+                    
+                  }
+                  if (document.getElementById('option-53').checked) {
+                    document.getElementById('block-53').style.border = '3px solid limegreen'
+                    document.getElementById('result-53').style.color = 'limegreen'
+                    document.getElementById('result-53').innerHTML = 'Correct!'
+                    
+                  }
+                  if (document.getElementById('option-54').checked) {
+                    document.getElementById('block-54').style.border = '3px solid red'
+                    document.getElementById('result-54').style.color = 'red'
+                    document.getElementById('result-54').innerHTML = 'Incorrect!'
+                  }
+                  showCorrectAnswer1()
+                }
+                else{
+                alert("Please answer all the question");
+              }
+            }
+                  
+          
+                
+                // the functon displays the link to the correct answer
+                function showCorrectAnswer1() {
+                  document.getElementById('sub').style.display="none"
+                  let showAnswer1 = document.createElement('p')
+                  showAnswer1.innerHTML = 'Show Correct Answers'
+                  showAnswer1.style.position = 'relative'
+                  showAnswer1.style.top = '0px'
+                  showAnswer1.style.border = '2px solid blue'
+                  showAnswer1.style.borderRadius = '5px'
+                  showAnswer1.style.marginBottom = '20px'
+                  
+
+                  showAnswer1.style.fontSize = '20px'
+
+                  document.getElementById('showanswer1').appendChild(showAnswer1)
+                  showAnswer1.addEventListener('click', () => {
+                    document.getElementById('block-13').style.border = '3px solid limegreen'
+                    document.getElementById('result-13').style.color = 'limegreen'
+                    document.getElementById('result-13').innerHTML = 'Correct!'
+                    document.getElementById('block-22').style.border = '3px solid limegreen'
+                    document.getElementById('result-22').style.color = 'limegreen'
+                    document.getElementById('result-22').innerHTML = 'Correct!'
+                    document.getElementById('block-31').style.border = '3px solid limegreen'
+                    document.getElementById('result-31').style.color = 'limegreen'
+                    document.getElementById('result-31').innerHTML = 'Correct!'
+                    document.getElementById('block-44').style.border = '3px solid limegreen'
+                    document.getElementById('result-44').style.color = 'limegreen'
+                    document.getElementById('result-44').innerHTML = 'Correct!'
+                    document.getElementById('block-53').style.border = '3px solid limegreen'
+                    document.getElementById('result-53').style.color = 'limegreen'
+                    document.getElementById('result-53').innerHTML = 'Correct!'
+
+                    document.getElementById('showanswer1').removeChild(showAnswer1)
+
+
+
+                    var s_arr=[];
+    
+    if(document.getElementById("option-13").checked)
+    {
+        s_arr.push(5);
+    }
+    if(document.getElementById("option-22").checked)
+    {
+        s_arr.push(5);
+    }
+    if(document.getElementById("option-31").checked)
+    {
+        s_arr.push(5);
+    }
+    if(document.getElementById("option-44").checked)
+    {
+        s_arr.push(5);
+    }
+    if(document.getElementById("option-53").checked)
+    {
+        s_arr.push(5);
+    }
+    console.log(s_arr);
+    var sum=s_arr.reduce(function(a,b){
+    return a+b;
+    });
+    alert("Score: "+sum);
+
+
+                    
+                    let goHome = document.createElement('button')
+                  goHome.innerHTML = 'It Is Your Time To Go Home !!'
+                  goHome.style.position = 'relative'
+                  goHome.style.top = '0px'
+                  goHome.setAttribute("type", "submit");
+                  goHome.setAttribute("id", "login_Check");
+                  goHome.setAttribute("onclick","HomePage()");
+                  goHome.setAttribute("name","goHome");
+
+                  goHome.style.border = '2px solid blue'
+                  goHome.style.borderRadius = '5px'
+                  goHome.style.marginBottom = '20px'
+                  
+
+                  goHome.style.fontSize = '20px'
+                    console.log(goHome);
+                  document.getElementById('getback').appendChild(goHome);
+                 
+                  })
+                  
+
+
+                }
+                function HomePage()
+                    {
+                     
+                      window.location="file:///E:/Ramkumar/front%20end%20development/projectsignup.html"
+                    }
+
+
+
+              </script> 
+
+      
+        </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+
+
+
+
+​
+
+  </body>
+  </html>
